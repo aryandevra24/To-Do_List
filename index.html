@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>To-Do List</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- heading -->
+        <header>
+            <h1>To-Do List</h1>
+            <img src="./images/illustration.png" alt="">
+        </header>
+
+
+        <!-- input data -->
+        <form action="#">
+            <div class="add-task">
+
+                <p><input type="text" placeholder="Type your task here ..." id="input-text" required /></p>
+
+                <div class="date-time">
+                    <div class="date">
+                        <label for="date">Date:</label>
+                        <input type="date" id="date" />
+                    </div>
+
+                    <div class="time">
+                        <label for="time">Time:</label>
+                        <input type="time" id="time" />
+                    </div>
+                </div>
+
+                <button type="submit">Add Task</button>
+            </div>
+        </form>
+
+        <!-- filter-menu -->
+        <div class="filter">
+            <button data-filter="all" class="active">All</button>
+            <button data-filter="completed">Completed</button>
+            <button data-filter="pending">Pending</button>
+        </div>
+
+        <!-- task-list -->
+        <div class="task-container">
+        </div>
+
+        <!-- task-overlay -->
+        <div class="modal-overlay" id="modalOverlay">
+            <div class="modal">
+                <h2>Task Details</h2>
+                <p><strong>Task:</strong> <span id="modalTaskText"></span></p>
+                <p><strong>Date:</strong> <span id="modalTaskDate"></span></p>
+                <p><strong>Time:</strong> <span id="modalTaskTime"></span></p>
+                <button id="closeModal">Close</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
