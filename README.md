@@ -1,6 +1,6 @@
 # 📝 To-Do List App
 
-A simple and interactive **To-Do List web application** built using **HTML, CSS, and Vanilla JavaScript**.  
+A simple and interactive **To-Do List web application** built using **HTML**, **CSS**, and **Vanilla JavaScript**.  
 It helps users manage daily tasks efficiently with date & time support and persistent storage.
 
 ---
